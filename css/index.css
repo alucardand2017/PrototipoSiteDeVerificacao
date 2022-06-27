@@ -1,0 +1,85 @@
+button {
+    border-style: solid;
+    border-width: 5px;
+    border-color: aliceblue;
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: green;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: rgb(0, 255, 208);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px;
+    border-color: aliceblue;
+    border-style: solid;
+    box-shadow: 5px 8px grey;
+    ;
+}
+
+p {
+    color: grey;
+}
+
+input {
+    width: 400px;
+    height: 25px;
+    bottom: auto;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    color: aqua;
+    padding: 8px;
+}
+
+td {
+    border: 2px solid #dddddd;
+    text-align: left;
+    color: aliceblue;
+    padding: 8px;
+}
+
+#site {
+    width: 80%;
+}
+
+#status {
+    width: 10%;
+    text-align: center;
+}
+
+.site-conteudo {
+    width: 80%;
+}
+
+.remove-conteudo {
+    width: 80%;
+    color: red;
+    text-align: center;
+}
+
+.status-conteudo-inativo {
+    width: 10%;
+    text-align: center;
+    color: red;
+}
+
+.status-conteudo-ativo {
+    width: 10%;
+    text-align: center;
+    color: green;
+}

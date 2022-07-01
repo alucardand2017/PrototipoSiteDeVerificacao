@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
-    <script href="js/"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="Online, Verificação, Ativo, Fora, Caiu, Webpage, status">
     <meta name="description" content="Verification the Status of Sites and Webpages">
     <meta name="author" content="Anderson Nascimento">
-    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="refresh" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROTOTIPO</title>
 </head>
@@ -16,25 +17,21 @@
 <body>
     <h1>VERIFICADOR DE SITES</h1>
     <input type="text" placeholder="Insira a URL" class="caixa-busca">
-    <button type="button" title="Buscar" class="button">Inserir</button>
-    <table>
+    <button type="submit" id="botao-inserir" class="button">Inserir</button>
+    <table id="sites-cadastrados">
         <tr>
-            <th id="site">Site</th>
+            <th id="site">Site (ex: www.google.com.br)</th>
             <th id="status">Status</th>
-            <th> Remove</th>
+            <th id="time">Time</th>
+            <th id="remove">Remove</th>
         </tr>
-        <tr>
-            <td class="site-conteudo">www.google.com.br</td>
-            <td class="status-conteudo-inativo">OK</td>
-            <td class="remove-conteudo">x</td>
-        </tr>
-        <tr>
-            <td class="site-conteudo">www.microsoft.com.br</td>
-            <td class="status-conteudo-ativo">OK</td>
-            <td class="remove-conteudo">x</td>
-        </tr>
+
     </table>
 
+    <script src="js/inserir-site.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/remover-site.js"></script>
+    <script src="js/verifica-status.js"></script>
 
 
 </body>

@@ -2,7 +2,6 @@ var tabela = document.querySelector("#sites-cadastrados");
 var botaoAdicionarSite = document.querySelector("#botao-inserir");
 var campoEndereco = document.querySelector(".caixa-busca");
 
-
 botaoAdicionarSite.addEventListener("click", adicionarSite);
 
 campoEndereco.addEventListener("keydown", function(event) {
@@ -12,12 +11,13 @@ campoEndereco.addEventListener("keydown", function(event) {
 });
 
 function adicionarSite() {
-    var sitesTr = tabela.querySelectorAll("tr");
     var text = campoEndereco.value;
     if (validaTextoEmail(text)) {
         criaTd(campoEndereco.value);
-        console.log(sitesTr);
         campoEndereco.value = null;
+        var sitesCadastrados = atualizaListaSites();
+        siteResponse(sitesCadastrados);
+
     } else {
         console.log("Digite um endereço válido!");
         alert("Digite um endereço válido!");
